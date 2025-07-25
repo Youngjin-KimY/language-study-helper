@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>language-helper</title>
+    </head>
+    <body>
+        <h2>Transcription Progress</h2>
+        <input id="urlInput" placeholder="Enter Youtube URL" size="60" />
+        <!-- <select id="langSelect">
+            <option value="en">English</option>
+            <option value="zh">Simplified Chinese</option>
+            <option value="zh-Hant">Traditional Chinese</option>
+            <option value="ko">Korean</option>
+        </select> -->
+        <button onclick="start()">Start</button>
+        
+        <div id="status"></div>
+        <div id="download"></div>
+        <div id="transcribe"></div>
+        <div id="merge"></div>
+        <pre id="log" style="background: #111; color: #0f0; padding: 1em;"></pre>
+        <!-- <script src="main.js"></script> -->
+        <div id="videoPlayerContainer"></div>
+        <div id="subtitleBox" style="margin-top: 1em; font-size: 1.2em;"></div>
+        <ul id="videoList"></ul>
+
+        <script type="module">
+            import { start } from './main.js'
+            window.start = start
+        </script>
+    </body>
+</html>
